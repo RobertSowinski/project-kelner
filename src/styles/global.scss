@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import './settings.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-dark;
+  font-family: $font-text;
+  color: #fff;
+  letter-spacing: 0.7px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
