@@ -7,8 +7,8 @@ import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchTables } from './redux/tablesRedux';
+import Table from './components/Table/Table';
 
-// <Route path="/list/:listId" element={<List/>}/>
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -20,7 +20,7 @@ const App = () => {
       <Container>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          
+          <Route path="/table/:id" element={<Table />}/> {/* Dynamic route for table details */}
         </Routes>
       </Container>
       <Footer/>
