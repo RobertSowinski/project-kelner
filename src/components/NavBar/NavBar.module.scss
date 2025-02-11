@@ -9,4 +9,9 @@
         text-decoration: none;
         padding:0 1rem;
     }
+    a:hover{
+        transform: scale(1.2);
+        transition: 1s;
+        color:#ebab5d;
+    }
 }
