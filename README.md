@@ -1,3 +1,6 @@
+link do replit: 
+https://93bf1d81-0c89-45c1-abd8-f0d5e69cfa40-00-2mj9sxtc66422.kirk.replit.dev/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
