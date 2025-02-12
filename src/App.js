@@ -3,7 +3,7 @@ import './styles/global.scss';
 import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchTables } from './redux/tablesRedux';
@@ -20,7 +20,8 @@ const App = () => {
       <Container>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/table/:id" element={<Table />}/> {/* Dynamic route for table details */}
+          <Route path="/table/:id" element={<Table />}/>
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Container>
       <Footer/>

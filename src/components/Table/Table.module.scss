@@ -1,26 +1,35 @@
-.table{
+.table {
     height: 40vh;
     background-color: #15ccae;
-    .title{
-        font-size: 2rem;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .title {
+        font-size: 4rem;
         color: #fff;
-        padding:20px;
+        padding: 0 10px;
     }
-    span{
+
+    span {
         color: #fff;
         font-size: 1.5rem;
-        padding: 10px;
+        padding: 0 10px;
     }
-    input{
-        padding: 10px;
-        margin: 10px;
+
+    input {
+        text-align: center;
+        padding:15px 10px;
         border-radius: 5px;
         border: none;
-        min-width:50px;
-        max-width:50px;
+        min-width: 50px;
+        max-width: 50px;
     }
-    
-}
-.hidden{
-    display:none;
+    .bill-span {
+        margin-right:25px;
+    }
+    .hidden {
+        display: none !important;
+    }
 }
