@@ -1,3 +1,5 @@
+import { API_URL } from '../config';
+
 // Action types
 const SET_TABLES = 'app/tables/SET_TABLES';
 const UPDATE_TABLE = 'app/tables/UPDATE_TABLE';
@@ -14,7 +16,7 @@ export const setError = (error) => ({ type: SET_ERROR, payload: error });
 export const fetchTables = () => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const response = await fetch('http://localhost:3131/api/tables');
+    const response = await fetch(`${API_URL}/tables`);
     const data = await response.json();
     dispatch(setTables(data));
   } catch (error) {
@@ -27,7 +29,7 @@ export const fetchTables = () => async (dispatch) => {
 export const updateTableInAPI = (table) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const response = await fetch(`http://localhost:3131/api/tables/${table.id}`, {
+    const response = await fetch(`${API_URL}/tables/${table.id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(table),

@@ -3,10 +3,10 @@
     {
       "id": "1",
       "name": "Table 1",
-      "status": "cleaning",
-      "people": 3,
+      "status": "busy",
+      "people": 4,
       "seats": 10,
-      "bill": 195
+      "bill": 53
     },
     {
       "id": "2",
